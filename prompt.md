@@ -1,10 +1,9 @@
-# 🧠 Implementation Guide: Static Web Applications with Premium UX
+# Implementation Guide: Static Web Applications with Premium UX
 
-> A distilled guide for developers and AI agents on building polished, client-side web applications that feel professional and delightful to use.
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 1. [Philosophy](#philosophy)
 2. [Project Setup Strategy](#project-setup-strategy)
