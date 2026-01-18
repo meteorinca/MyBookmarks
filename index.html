@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minimalist bookmark viewer inspired by Hacker News. Browse, search, and filter your bookmarks with ease.">
+    <title>📘 Bookmark Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="logo-icon">📘</span>
+                    <span class="logo-text">Bookmark Viewer</span>
+                </h1>
+                <button id="random-btn" class="btn btn-random" title="Go to random bookmark">
+                    🎲 Random
+                </button>
+            </div>
+        </header>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="Search bookmarks..."
+                    autocomplete="off"
+                >
+                <button id="clear-search" class="clear-btn" title="Clear search">×</button>
+            </div>
+            
+            <div class="filter-section">
+                <div class="filter-label">Filter by tag:</div>
+                <div id="tag-filters" class="tag-filters">
+                    <!-- Tags will be dynamically inserted here -->
+                </div>
+            </div>
+
+            <div class="sort-section">
+                <label for="sort-select" class="sort-label">Sort by:</label>
+                <select id="sort-select" class="sort-select">
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="date-newest">Date (Newest)</option>
+                    <option value="date-oldest">Date (Oldest)</option>
+                    <option value="source">Source</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats" id="stats">
+            <span id="bookmark-count">0 bookmarks</span>
+            <span class="stats-divider">•</span>
+            <span id="source-count">0 sources</span>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading" class="loading">
+            <div class="loading-spinner"></div>
+            <span>Loading bookmarks...</span>
+        </div>
+
+        <!-- Error Message -->
+        <div id="error-message" class="error-message"></div>
+
+        <!-- Bookmarks List -->
+        <main>
+            <ol id="bookmark-list" class="bookmark-list">
+                <!-- Bookmarks will be dynamically inserted here -->
+            </ol>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with ❤️ • Powered by JSON • <a href="https://github.com" target="_blank">View on GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

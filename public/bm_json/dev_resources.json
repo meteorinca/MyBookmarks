@@ -1,0 +1,57 @@
+{
+    "title": "Developer Resources",
+    "items": [
+        {
+            "title": "Can I Use",
+            "url": "https://caniuse.com",
+            "tags": [
+                "web",
+                "compatibility",
+                "reference"
+            ],
+            "description": "Browser support tables for modern web technologies",
+            "archived": false,
+            "created_at": "2024-03-15T10:00:00Z",
+            "source": "Chrome Desktop"
+        },
+        {
+            "title": "JavaScript.info",
+            "url": "https://javascript.info",
+            "tags": [
+                "javascript",
+                "tutorials",
+                "learning"
+            ],
+            "description": "The modern JavaScript tutorial",
+            "archived": false,
+            "created_at": "2024-04-01T14:30:00Z",
+            "source": "Firefox Desktop"
+        },
+        {
+            "title": "Regex101",
+            "url": "https://regex101.com",
+            "tags": [
+                "regex",
+                "tools",
+                "development"
+            ],
+            "description": "Online regex tester and debugger",
+            "archived": false,
+            "created_at": "2024-05-10T09:15:00Z",
+            "source": "Chrome Desktop"
+        },
+        {
+            "title": "JSON Formatter",
+            "url": "https://jsonformatter.org",
+            "tags": [
+                "json",
+                "tools",
+                "development"
+            ],
+            "description": "Format and validate JSON data",
+            "archived": false,
+            "created_at": "2024-06-05T16:00:00Z",
+            "source": "Chrome Desktop"
+        }
+    ]
+}
